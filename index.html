@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            background-color: #202020;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+           
+        }
+        .pieces{
+            position: absolute;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: #ffcc20;
+            right: 58%;
+            animation: pieces 1s linear infinite;
+
+        }
+        .one{
+            position: absolute;
+            background-color: yellowgreen;
+            top: 50%;
+            right: 42%;
+            height: 125px;
+            width: 250px;
+            border-radius: 0 0 125px 125px;
+            animation: anim1 1s linear infinite;
+        }
+        .two{
+            position: absolute;
+            background-color: yellowgreen;
+            top: 32.1%;
+            right: 42%;
+            height: 125px;
+            width: 250px;
+            border-radius:125px 125px 0 0;
+            animation: anim2 1s linear infinite;
+        }
+        .eye{
+            position: absolute;
+            background-color: #202020;
+            border-radius: 50%;
+            padding: 10px;
+            top: 38%;
+            left: 50%;
+            animation: eye 2s linear infinite;
+        }
+        p{
+            color:green;
+            position: absolute;
+            top: 65%;
+            right: 30%;
+            font-weight: bold;
+            font-size: 30px;
+            letter-spacing: 2px;
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+
+        @keyframes anim1{
+            0%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(30deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+        @keyframes anim2{
+            0%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(-30deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+        @keyframes pieces{
+            0%{right: 25%;}
+
+            100%{right:48%}
+            
+        }
+        @keyframes eye{
+            0%{
+                top: 38%;
+                left: 48%;
+            }
+            50%{
+                top: 38.3%;
+                left: 48.3%;
+            }
+            100%{top: 38%;
+                left: 48%;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="eye"></div>
+    <div class="pieces"></div>
+    <p>loading....</p>
+</body>
+</html>
